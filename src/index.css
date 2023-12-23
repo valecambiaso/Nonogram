@@ -1,0 +1,238 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+.square {
+  background: white;
+  border: 1px solid rgb(245, 185, 57);
+  margin-top: -1px;
+  margin-right: -1px;
+  display: inline-block;
+  padding: 0px 0px;
+}
+
+.square:hover {
+  opacity: 50%;
+}
+
+.hashtag.add::before {
+  font-family: fontAwesome;
+  color:rgb(255, 92, 160);
+  font-size: 40px; 
+  content: "\f0c8";
+  vertical-align: middle;
+}
+
+.x.add::before {
+  font-family: fontAwesome;
+  color:rgb(255, 92, 160);
+  font-size: 40px; 
+  content: "\f00d";
+  vertical-align: middle;
+}
+
+.hashtagButton.add::before {
+  font-family: fontAwesome;
+  color:white;
+  font-size: 25px; 
+  content: "\f0c8";
+  vertical-align: middle;
+}
+
+.xButton.add::before {
+  font-family: fontAwesome;
+  color:white;
+  font-size: 25px; 
+  content: "\f00d";
+  vertical-align: middle;
+}
+
+.redo.add::before {
+  font-family: fontAwesome;
+  color:white;
+  font-size: 25px; 
+  content: "\f0e2";
+  vertical-align: middle;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.animated {
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+.impar {
+  background: rgb(245, 219, 163);
+}
+
+.par {
+  background: rgb(255, 249, 249);
+}
+
+.board {
+  display: grid;
+}
+
+.horizontal {
+  display: flex;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowClues {
+  display: grid;
+}
+
+.colClues {
+  display: grid;
+}
+
+.colClues .clue {
+  flex-direction: column;
+}
+
+.colClues .satClue {
+  flex-direction: column;
+}
+
+.rowClues .clue {
+  flex-direction: row;
+
+}
+
+.rowClues .satClue {
+  flex-direction: row;
+}
+
+.clue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f73f95;
+  background-clip: content-box; 
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.satClue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffc8e1;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.clue div {
+  margin: 2px
+}
+
+.satClue div {
+  margin: 2px
+}
+
+.colClues .clue {
+  flex-direction: column;
+}
+
+.colClues .satClue {
+  flex-direction: column;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondo {
+  display: flex;
+  background: linear-gradient(#f73f95, rgb(245, 185, 57));
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-color: #fff;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  color:white;
+}
+
+.buttonSelect {
+  display: flex;
+  background: linear-gradient(#f73f95, rgb(245, 185, 57));
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border-color: #fff;
+  color:white;
+}
+
+.disabledbuttonSelect {
+  display: flex;
+  background: linear-gradient(rgb(73, 73, 73), rgb(182, 181, 181));
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border-color: #fff;
+  color:white;
+}
+
+.flecha.add::after {
+  font-family: fontAwesome;
+  color:white;
+  content: "\f0d7";
+}
+
+.idea.add::after {
+  font-family: fontAwesome;
+  color:white;
+  content: "\f0eb";
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.solver.add::after {
+  font-family: fontAwesome;
+  color:white;
+  content: "\f00a";
+  font-size: 25px;
+  vertical-align: middle;
+}
+
+.disabledfondo {
+  display: flex;
+  background: linear-gradient(rgb(73, 73, 73), rgb(182, 181, 181));
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border-color: #fff;
+}
